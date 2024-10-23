@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Answer Survey Form</p>
+    <form id="survey-form">
+      <fieldset class="field1">
+        <div>
+          <label id="name-label">
+            Enter your name:
+            <input type="text" id="name" placeholder=" Full Name" required />
+          </label>
+        </div>
+        <div>
+          <label id="email-label">
+            Enter your email:
+            <input
+              type="email"
+              id="email"
+              placeholder=" email@mail.com"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label id="number-label">
+            Enter your age:
+            <input
+              type="number"
+              id="number"
+              min="13"
+              max="120"
+              placeholder=" age (13-120)"
+              required
+            />
+          </label>
+        </div>
+        <div id="survey-form">
+          <label id="gender">
+            Select your gender:
+            <select id="dropdown" required>
+              <option value="" disabled selected>(Select)</option>
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+              <option value="3">Rather not say</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+
+      <hr />
+
+      <fieldset>
+        <div>
+          <label
+            >Select Language:
+            <div>
+              <label
+                ><input
+                  type="radio"
+                  name="language"
+                  class="inline"
+                  value="1"
+                  checked
+                />English</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="language"
+                  class="inline"
+                  value="2"
+                />Tagalog</label
+              >
+            </div>
+          </label>
+        </div>
+      </fieldset>
+
+      <hr />
+
+      <fieldset>
+        <div>
+          <label>
+            Select Interests:
+            <div>
+              <label
+                ><input
+                  type="checkbox"
+                  value="1"
+                  class="inline"
+                />Academics</label
+              >
+              <label
+                ><input type="checkbox" value="2" class="inline" />Sports</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  value="3"
+                  class="inline"
+                />Technology</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  value="4"
+                  class="inline"
+                />Business</label
+              >
+            </div>
+          </label>
+        </div>
+      </fieldset>
+
+      <hr />
+
+      <fieldset>
+        <div>
+          <label>
+            How can I improve my website?
+            <textarea
+              placeholder="I think the website can improve..."
+            ></textarea>
+          </label>
+        </div>
+      </fieldset>
+      <div id="survey-form">
+        <input type="submit" id="submit" />
+      </div>
+    </form>
+  </body>
+</html>
